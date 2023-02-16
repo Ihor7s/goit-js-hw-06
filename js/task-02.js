@@ -7,20 +7,18 @@ const ingredients = [
   'Condiments',
 ];
 
-// const navIthemEl = document.createElement('li');
-// navIthemEl.classList.add('item');
-// navIthemEl.textContent = ingredients;
+const ulRef = document.createElement('ul');
+const liListRef = ingredients.map((name) => {
+  const liRef = document.createElement('li');
+  liRef.textContent = name;
+  return liRef;
+})
 
-const elements = ingredients.map(option => {
+ulRef.append(...liListRef);
+console.log(ulRef)
 
-const navIthemEl = document.createElement('li');
-navIthemEl.classList.add('item');
-navIthemEl.textContent = ingredients;
-  return navIthemEl
-  
-} )
-
+document.body.append(ulRef);
 
 
-console.log(elements)
+
 
