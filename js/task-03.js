@@ -25,12 +25,3 @@ const makeGalImg = images.map(makeGallery).join(" ");
 galleryImg.insertAdjacentHTML("beforeend", makeGalImg);
 
 
-
-// const liRef = document.createElement('li');
-// const imgRef = document.createElement('img');
-// imgRef.classList.add = ('ithem__img');
-// imgRef.src = 'https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260';
-// imgRef.alt = 'White and Black Long Fur Cat';
-
-// liRef.append(imgRef);
-// console.log(liRef);
